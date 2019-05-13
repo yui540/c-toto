@@ -1,0 +1,21 @@
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title きらきらぱれっと。
+    link(rel="stylesheet" href="./style.css")
+  body
+    .stage
+      .inner
+        - var colors = ['#ca7a92', '#A8CBC6', '#D1A64F', '#817487', '#C7CFE6', '#B66C69', '#9EA85C', '#E6C06C', '#B28697']
+        each color in colors
+          .color
+            .bg
+              - for(var x=0; x < 4; x++)
+                .line(style=`background-color: ${color};`)
+            .panel(style=`background-color: ${color};`)
+            .color-code= color
+            .particle
+              - for(var x=0; x < 16; x++)
+                div

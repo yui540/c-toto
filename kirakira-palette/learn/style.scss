@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+}
+
+/* 親要素いっぱいに要素を貼り付ける */
+%fixed100per {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 中の要素を縦横共に中央にもってくる */
+%content-center {
+  background-color: #F4ECDC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$palette-size: 120px;
+$palette-gap: 10px;
+
+.stage {
+  @extend %fixed100per;
+  @extend %content-center;
+
+  .inner {
+    @extend %content-center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc(#{$palette-size} * 3 + #{$palette-gap} * 2);
+  }
+
+  /* -----ここから自分で記述してみよう！----- */
+  
+
+  /* -----ここまで自分で記述してみよう！----- */
+}
+
+/*****************************************************************************
+  animation
+******************************************************************************/
+/* -----ここから自分で記述してみよう！----- */
+
+
+/* -----ここまで自分で記述してみよう！----- */
+
+/*****************************************************************************
+  keyframes
+******************************************************************************/
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slide-top {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(-100%); }
+}
+@keyframes slide-bottom {
+  from { transform: translateY(-100%); }
+  to   { transform: translateY(100%); }
+}
+@keyframes slide-right {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(100%); }
+}
+@keyframes slide-left {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(-100%); }
+}
+@keyframes bound {
+  0%   { transform: scale(0); border-radius: 50%; }
+  40%  { transform: scale(1); border-radius: 0%; }
+  50%  { transform: scale(0.9); border-radius: 0%; }
+  60%  { transform: scale(1); border-radius: 0%; }
+  70%  { transform: scale(0.95); border-radius: 0%; }
+  80%  { transform: scale(1); border-radius: 0%; }
+  90%  { transform: scale(0.975); border-radius: 0%; }
+  100% { transform: scale(1); border-radius: 0%; }
+}
+
+@keyframes bound-reverse {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(0); }
+  50%  { transform: scale(0.1); }
+  60%  { transform: scale(0); }
+  70%  { transform: scale(0.05); }
+  80%  { transform: scale(0); }
+  90%  { transform: scale(0.025); }
+  100% { transform: scale(0); }
+}

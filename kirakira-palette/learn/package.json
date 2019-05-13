@@ -1,0 +1,20 @@
+{
+  "name": "@yui540/kirakira-palette",
+  "version": "0.0.0",
+  "description": "きらきらぱれっと。",
+  "scripts": {
+    "serve": "http-server .",
+    "pug": "pug index.pug",
+    "pug:watch": "pug index.pug -w",
+    "scss": "node-sass style.scss style.css",
+    "scss:watch": "node-sass style.scss style.css -w"
+  },
+  "keywords": [],
+  "author": "yui540 <tabletennis540@gmail.com> (https://yui540.graphics)",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "0.11.1",
+    "node-sass": "4.12.0",
+    "pug-cli": "1.0.0-alpha6"
+  }
+}
