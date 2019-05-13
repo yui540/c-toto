@@ -2,6 +2,13 @@
 ![cover](./res/cover.png)
 ![screenshot](./res/screenshot.png)
 
+- 完成品URL
+  - [http://c-toto.magical-girl.site/kirakira-palette/complete/](http://c-toto.magical-girl.site/kirakira-palette/complete/)
+- 動画
+  - [動作確認：Twitter](https://twitter.com/yui540/status/1127940429599604736)
+- ブログ
+  - []()
+
 ※こちらは受講用の未完成のコードになります。
 
 ## 各種コマンド
